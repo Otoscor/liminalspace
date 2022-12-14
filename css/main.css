@@ -549,6 +549,14 @@ section.definition {
 }
 
 @media (max-width: 740px) {
+  .wrap-floor {
+    height: 100vh;
+  }
+
+  .definition {
+    height: 100%;
+  }
+
   .camera .stage {
     display: block;
     height: 100%;
@@ -558,33 +566,33 @@ section.definition {
   }
 
   .camera .stage figure {
-    transform: translateX(80px) rotate(2.6deg);
+    transform: translateX(54px) rotate(2.6deg);
   }
 
   .camera .stage figure img {
-    width: 274px;
+    width: 340px;
   }
 
   .camera .stage video {
     top: 8px;
     left: 18px;
-    transform: scale(0.27);
+    transform: scale(0.34);
   }
 
   .camera .infos {
-    max-width: 240px;
-    transform: rotate(0) translateY(-1rem);
+    max-width: 280px;
+    transform: rotate(0) translateX(-1.1rem) translateY(-1rem);
     z-index: 100;
     text-align: center;
   }
 
   .camera .infos h1 {
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 16px;
   }
 
   .camera .infos p {
-    font-size: 9px;
+    font-size: 14px;
     line-height: 1.6;
     margin-bottom: 40px;
   }
