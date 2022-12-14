@@ -566,7 +566,7 @@ section.definition {
   }
 
   .camera .stage figure {
-    transform: translateX(40px) rotate(2.6deg);
+    transform: translateX(46px) rotate(2.6deg);
   }
 
   .camera .stage figure img {
@@ -581,7 +581,7 @@ section.definition {
 
   .camera .infos {
     max-width: 280px;
-    transform: rotate(0) translateX(-2rem) translateY(-1rem);
+    transform: rotate(0) translateX(-1.6rem) translateY(-1rem);
     z-index: 100;
     text-align: center;
   }
@@ -919,13 +919,15 @@ section.definition {
 .tabbar .tabbar-item a {
   transition: all 0.4s;
   position: relative;
-  display: block;
+  display: inline-block;
   text-align: center;
   animation: flicker 2s linear infinite;
   color: #fff;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.tabbar .tabbar-item.active {
+.tabbar .tabbar-item.active a {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff,
     0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
 }
