@@ -551,13 +551,13 @@ section.definition {
 @media (max-width: 740px) {
   .camera .stage {
     display: block;
+    height: 100%;
   }
 
   .camera .stage .figures {
   }
 
   .camera .stage figure {
-    height: 300px;
     transform: translateX(80px) rotate(2.6deg);
   }
 
@@ -573,18 +573,18 @@ section.definition {
 
   .camera .infos {
     max-width: 240px;
-    transform: rotate(0) translateY(-6.4rem);
+    transform: rotate(0) translateY(-1rem);
     z-index: 100;
     text-align: center;
   }
 
   .camera .infos h1 {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 16px;
   }
 
   .camera .infos p {
-    font-size: 8px;
+    font-size: 9px;
     line-height: 1.6;
     margin-bottom: 40px;
   }
