@@ -851,7 +851,7 @@ section.definition {
   width: 8rem;
   height: 8rem;
   position: fixed;
-  bottom: 2rem;
+  bottom: 3rem;
   left: 50%;
   transform: translateX(-50%);
   /* background-color: rgba(255,255,255,0.2); */
@@ -885,5 +885,48 @@ section.definition {
   }
   to {
     opacity: 1;
+  }
+}
+
+.tabbar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  padding-top: 8px;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background: rgba(10, 10, 10, 0.65);
+  box-shadow: var(--efect-shadow);
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  display: none;
+}
+
+.tabbar .tabbar-item {
+  overflow: hidden;
+  position: relative;
+  height: 35px;
+}
+.tabbar .tabbar-item a {
+  transition: all 0.4s;
+  position: relative;
+  display: block;
+  text-align: center;
+  animation: flicker 2s linear infinite;
+  color: #fff;
+}
+
+.tabbar .tabbar-item.active {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff,
+    0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+}
+
+@media (max-width: 740px) {
+  .tabbar {
+    display: flex;
   }
 }
