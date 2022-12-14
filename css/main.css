@@ -921,15 +921,14 @@ section.definition {
   position: relative;
   display: inline-block;
   text-align: center;
-  animation: flicker 2s linear infinite;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
   font-weight: bold;
   font-size: 20px;
 }
 
 .tabbar .tabbar-item.active a {
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff,
-    0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+  animation: flicker 2s linear infinite;
+  color: #fff;
 }
 
 @media (max-width: 740px) {
