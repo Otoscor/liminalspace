@@ -566,7 +566,7 @@ section.definition {
   }
 
   .camera .stage figure {
-    transform: translateX(48px) rotate(2.6deg);
+    transform: translateX(40px) rotate(2.6deg);
   }
 
   .camera .stage figure img {
@@ -581,7 +581,7 @@ section.definition {
 
   .camera .infos {
     max-width: 280px;
-    transform: rotate(0) translateX(-1.6rem) translateY(-1rem);
+    transform: rotate(0) translateX(-2rem) translateY(-1rem);
     z-index: 100;
     text-align: center;
   }
