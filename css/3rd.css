@@ -77,9 +77,12 @@
 }
 
 @media (max-width: 740px) {
+  #card {
+    margin: auto;
+  }
+
   .swiper {
     width: calc(240px);
     height: calc(320px);
-    transform: translateY(14rem);
   }
 }
