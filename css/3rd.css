@@ -78,7 +78,7 @@
 
 @media (max-width: 740px) {
   #card {
-    margin: auto;
+    transform: translateY(12rem);
   }
 
   .swiper {
