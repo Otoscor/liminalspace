@@ -87,7 +87,7 @@
   }
 
   .swiper {
-    width: calc(240px * 1.1);
-    height: calc(320px * 1.1);
+    width: calc(240px);
+    height: calc(320px);
   }
 }
