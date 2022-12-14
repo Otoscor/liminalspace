@@ -798,29 +798,33 @@ section.definition {
 @media (max-width: 740px) {
   .swiper-slide .info-wrap h3 {
     border-right: solid 3px rgba(0, 255, 0, 0.75);
-    white-space: nowrap;
-    max-width: 360px;
+    transform: translateY(-4rem);
+    white-space: wrap;
+    max-width: 324px;
     overflow: hidden;
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .swiper-slide .info h3 {
+    font-size: 24px;
+  }
+
+  .swiper-slide .info p {
+    font-size: 14px;
+    line-height: 1.8;
   }
 
   .swiper-slide .info.info--first {
-    left: 20%;
-    top: 30%;
-    max-width: none;
-    width: 70%;
+    left: 14%;
   }
+
   .swiper-slide .info.info--second {
-    left: 20%;
-    top: 30%;
-    max-width: none;
-    width: 70%;
+    left: 14%;
   }
+
   .swiper-slide .info.info--third {
-    left: 20%;
-    top: 30%;
-    max-width: none;
-    width: 70%;
+    left: 18%;
+    width: 60%;
   }
 }
 
@@ -890,6 +894,26 @@ section.definition {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 740px) {
+  .scroll-notification {
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    bottom: 4rem;
+  }
+  .scroll-notification .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .scroll-notification .scroll-notification-paragraph p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 8px;
   }
 }
 
