@@ -77,12 +77,16 @@
 }
 
 @media (max-width: 740px) {
+  .thrid-floor {
+    height: 100vh;
+  }
+
   #card {
-    transform: translateY(12rem);
+    transform: translateY(10rem);
   }
 
   .swiper {
-    width: calc(240px);
-    height: calc(320px);
+    width: calc(240px * 1.1);
+    height: calc(320px * 1.1);
   }
 }
