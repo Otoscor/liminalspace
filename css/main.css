@@ -550,45 +550,42 @@ section.definition {
 
 @media (max-width: 740px) {
   .camera .stage {
-    position: absolute;
-    margin-left: 6rem;
-    transform: translateY(-3rem);
+    display: block;
   }
 
   .camera .stage .figures {
-    height: 600px;
   }
 
   .camera .stage figure {
-    height: 400px;
-    transform: translateX(60px) rotate(2.6deg);
+    height: 300px;
+    transform: translateX(80px) rotate(2.6deg);
   }
 
   .camera .stage figure img {
-    width: 400px;
+    width: 274px;
   }
 
   .camera .stage video {
-    top: 11px;
-    left: 27px;
-    transform: scale(0.39);
+    top: 8px;
+    left: 18px;
+    transform: scale(0.27);
   }
 
   .camera .infos {
-    max-width: 320px;
-    transform: rotate(0) translateY(-4rem);
+    max-width: 240px;
+    transform: rotate(0) translateY(-6.4rem);
     z-index: 100;
     text-align: center;
   }
 
   .camera .infos h1 {
-    font-size: 20px;
+    font-size: 14px;
     margin-bottom: 16px;
   }
 
   .camera .infos p {
-    font-size: 12px;
-    line-height: 1.8;
+    font-size: 8px;
+    line-height: 1.6;
     margin-bottom: 40px;
   }
 }
