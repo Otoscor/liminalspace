@@ -814,16 +814,15 @@ section.definition {
     line-height: 1.8;
   }
 
-  .swiper-slide .info.info--first {
-    left: 14%;
-  }
-
+  .swiper-slide .info.info--first,
   .swiper-slide .info.info--second {
     left: 14%;
+    top: 10%;
   }
 
   .swiper-slide .info.info--third {
     left: 18%;
+    top: 10%;
     width: 60%;
   }
 }
