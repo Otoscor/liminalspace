@@ -79,6 +79,7 @@
 @media (max-width: 740px) {
   .thrid-floor {
     height: 100vh;
+    background-position: center center;
   }
 
   #card {
