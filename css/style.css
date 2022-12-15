@@ -134,6 +134,18 @@ body {
   .wall-title {
     font-size: 4rem;
   }
+
+  .wall-front-d .door {
+    position: absolute;
+    bottom: -60px;
+    width: 400px;
+    height: 700px;
+    transform: translateX(-200px) translateY(120px) scale(0.5);
+    background: rgb(0, 0, 0);
+    background-image: url(../images_wall/door_img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 .wall-title-paragraph {
   display: flex;
