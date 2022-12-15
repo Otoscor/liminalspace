@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+
 .thrid-floor {
   overflow: hidden;
 }
@@ -20,10 +22,13 @@
   background-image: url(../images/card_texture.png);
   background-size: cover;
 }
-
+.swiper-slide h3 {
+  font-family: "Gamja Flower", cursive;
+}
 .swiper-slide p {
   font-size: 16px;
   padding: 16px 24px;
+  font-family: "Gamja Flower", cursive;
 }
 
 .swiper-slide:nth-child(1n) .swiper-slide-img {
