@@ -130,6 +130,11 @@ body {
     0 0 150px rgb(255, 115, 0);
 }
 
+@media (max-width: 740px) {
+  .wall-title {
+    font-size: 4rem;
+  }
+}
 .wall-title-paragraph {
   display: flex;
   width: 100%;
