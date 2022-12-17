@@ -724,7 +724,7 @@ section.definition {
 }
 
 .swiper-slide .info.info--first {
-  top: 50%;
+  top: 20%;
   left: 40%;
 }
 .swiper-slide .info.info--second {
@@ -733,7 +733,7 @@ section.definition {
   top: 12rem;
 }
 .swiper-slide .info.info--third {
-  top: 50%;
+  top: 20%;
   left: 40%;
 }
 
@@ -776,20 +776,14 @@ section.definition {
 
 @media (max-width: 1000px) {
   .swiper-slide .info.info--first {
-    left: 20%;
-    top: 30%;
     max-width: none;
     width: 60%;
   }
   .swiper-slide .info.info--second {
-    left: 20%;
-    top: 30%;
     max-width: none;
     width: 70%;
   }
   .swiper-slide .info.info--third {
-    left: 20%;
-    top: 30%;
     max-width: none;
     width: 70%;
   }
