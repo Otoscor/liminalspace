@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      body {
+        position: relative;
+        background-color: black;
+        overflow: hidden;
+        height: 100%;
+      }
+
+      h1 {
+        color: #fff;
+      }
+      .human {
+        position: absolute;
+        width: 300px;
+        top: 4%;
+        left: calc(50% - 150px);
+        z-index: 100;
+      }
+
+      /* 3D text 영역 */
+      .textWrap {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 130%);
+        width: 60%;
+        z-index: 1;
+        transform-style: preserve-3d;
+        perspective: 300px;
+      }
+      .bg {
+        width: 140%;
+        height: 100vh;
+      }
+      .pipe {
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        width: 110%;
+        top: 10%;
+        z-index: 1;
+      }
+    </style>
+    <script>
+      let human;
+      let bg;
+      let h1;
+      let text3d;
+      let pipe;
+
+      let x = 0;
+      let y = 0;
+      let mx = 0;
+      let my = 0;
+      let speed = 0.009;
+
+      window.onload = function () {
+        h1 = document.getElementsByTagName("h1")[0];
+        human = document.getElementsByClassName("human")[0];
+        text3d = document.getElementsByClassName("text3d")[0];
+        bg = document.getElementsByClassName("bg")[0];
+        pipe = document.getElementsByClassName("pipe")[0];
+
+        window.addEventListener("mousemove", mouseFunc, false);
+
+        function mouseFunc(e) {
+          x = e.clientX - window.innerWidth / 2;
+          y = e.clientY - window.innerHeight / 2;
+        }
+        loop();
+      };
+
+      function loop() {
+        mx += (x - mx) * speed;
+        my += (y - my) * speed;
+
+        human.style.transform = "translate(" + mx / 9 + "px," + my / 9 + "px)";
+        bg.style.transform =
+          "translate(" + -(mx / 8) + "px," + -(my / 8) + "px)";
+
+        //3d 텍스트 모션
+        //rotate3d 속성
+        text3d.style.transform =
+          "translate3d(" +
+          -(mx / 2) +
+          "px," +
+          -(my / 2) +
+          "px,0) rotate3d(0,1,0," +
+          -mx / 50 +
+          "deg)";
+
+        //파이프
+        pipe.style.transform = "translate(" + mx / 4 + "px," + my / 3 + "px)";
+
+        window.requestAnimationFrame(loop);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="toggle">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div class="logo">
+        <img src="./images/door_front.png" alt="" />
+        <h3>liminal space</h3>
+      </div>
+      <nav>
+        <div class="nav-title">Floor</div>
+        <ul>
+          <li class="nav-item divisor-top">
+            <a href="">4F</a>
+            <span>주변 사례</span>
+          </li>
+          <li class="nav-item">
+            <a href="./3rd.html">3F</a>
+            <span>드림코어</span>
+          </li>
+          <li class="nav-item">
+            <a href="./2nd.html">2F</a>
+            <span>리미널</span>
+          </li>
+          <li class="nav-item active divisor-bottom">
+            <a href="./floor.html">1F</a>
+            <span>백룸</span>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="nav-item">
+            <a href="./index.html"
+              ><i class="fa-solid fa-right-from-bracket"></i
+            ></a>
+            <span>Out</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h1>test</h1>
+    <img src="" class="human" alt="닝겐" />
+    <div class="textWrap">
+      <img src="./masthead-logo.svg" class="text3d" alt="fix nothing" />
+    </div>
+    <img
+      src="./images/Higashi-Narita_Station_platform.jpg"
+      class="bg"
+      alt="벽"
+    />
+    <img src="./images/crwod_front.png" class="pipe" alt="파이프" />
+  </body>
+</html>
