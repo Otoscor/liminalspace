@@ -573,6 +573,8 @@ section.definition {
 
   .camera .stage figure img {
     width: 340px;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .camera .stage video {
