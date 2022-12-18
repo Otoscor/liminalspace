@@ -97,6 +97,10 @@ body {
 
 .wall-front-d {
   overflow-y: hidden;
+  background-image: url(../images/bluespace.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .wall-content {
@@ -104,18 +108,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-
-.wall-front-d .door {
-  position: absolute;
-  bottom: -60px;
-  width: 400px;
-  height: 700px;
-  transform: translateX(-200px);
-  background: rgb(0, 0, 0);
-  background-image: url(../images_wall/door_img.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .wall-title {
