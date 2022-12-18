@@ -339,14 +339,17 @@ section.definition {
 
 .camera .stage figure {
   transform: translate(-160px, 0);
+  overflow: hidden;
+}
+
+.camera .stage img {
+  transform: rotate(3deg);
 }
 
 .camera .stage video {
   position: absolute;
   top: 36px;
   left: 76px;
-  -webkit-mask-image: url(../images//camera_video_mask.png);
-  mask-image: url(../images//camera_video_mask.png);
 }
 
 .camera .infos {
@@ -354,7 +357,6 @@ section.definition {
   top: 0;
   right: -72px;
   max-width: 360px;
-  transform: rotate(-3deg);
   z-index: 100;
 }
 
